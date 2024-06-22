@@ -5,4 +5,7 @@ Query all columns for all American cities in the CITY table with populations lar
 
 The CITY table is described as follows:
 
-CITY.jpg
+## Solution
+SELECT *  
+FROM CITY 
+WHERE COUNTRYCODE = "USA" AND POPULATION > 100000
