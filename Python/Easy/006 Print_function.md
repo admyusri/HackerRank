@@ -1,4 +1,4 @@
-# 007 - Print Function
+# 006 - Print Function
 ## Task
 Read an integer `N` .
 
