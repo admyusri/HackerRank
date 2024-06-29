@@ -8,9 +8,9 @@ secondary sort them by ascending ID.
 ## INPUT FORMAT
 
 The **STUDENTS** table is described as follows:
-| Column	 | Type |
-|--------|--------|
-| ID	   | Integer|
+| Column | Type |
+|-----|--------|
+| ID	 | Integer|
 | Name	 | String |
 | Marks	 | Integer|
 
@@ -22,6 +22,7 @@ The **STUDENTS** table is described as follows:
 | 2	| Samantha| 75    |
 | 4	| Julia   | 76    |
 | 3 | Belvet  | 84    |
+
 The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
 
 ## SAMPLE OUTPUT 
