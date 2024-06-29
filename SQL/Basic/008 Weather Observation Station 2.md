@@ -20,7 +20,6 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ## Output Format
 Your results must be in the form:
-## Solution
 ```sql
 lat lon
 ```
