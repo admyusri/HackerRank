@@ -8,3 +8,4 @@ The CITY table is described as follows:
 ## Solution
 ```sql
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
+```
