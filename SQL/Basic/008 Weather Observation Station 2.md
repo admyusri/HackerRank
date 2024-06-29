@@ -7,7 +7,7 @@ Query the following two values from the STATION table:
 
 ## Input Format
 
-The **STATION table is described as follows:
+The **STATION** table is described as follows:
 | Field	 | Type          |
 |--------|---------------|
 | ID	   | NUMBER        |
