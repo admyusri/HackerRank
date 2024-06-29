@@ -24,6 +24,7 @@ the company, and salary is their monthly salary.
 |    33645  	| Angela  | 1      | 3443   |
 |    45692	  | Frank   | 17     | 1608   |
 |    56118    | Patrick | 7      | 1345   |
+
 The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
 
 ## SAMPLE OUTPUT 
