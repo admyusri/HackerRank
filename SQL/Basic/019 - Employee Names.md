@@ -19,7 +19,7 @@ the company, and salary is their monthly salary.
 ## SAMPLE INPUT 
 
 | employee_id | name    | months | salary |
-|-------------|---------|--------|
+|-------------|---------|--------|--------|
 |    12228    | Rose    | 15     | 1968   |
 |    33645  	| Angela  | 1      | 3443   |
 |    45692	  | Frank   | 17     | 1608   |
