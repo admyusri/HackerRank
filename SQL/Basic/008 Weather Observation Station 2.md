@@ -7,7 +7,7 @@ Query the following two values from the STATION table:
 
 ## Input Format
 
-The STATION table is described as follows:
+The **STATION table is described as follows:
 | Field	 | Type          |
 |--------|---------------|
 | ID	   | NUMBER        |
@@ -23,7 +23,7 @@ Your results must be in the form:
 ```sql
 lat lon
 ```
-where  is the sum of all values in LAT_N and  is the sum of all values in LONG_W. Both results must be rounded to a scale of  decimal places.
+where lat is the sum of all values in LAT_N and lon is the sum of all values in LONG_W. Both results must be rounded to a scale of 2  decimal places.
 
 ## Solution
 ```sql
