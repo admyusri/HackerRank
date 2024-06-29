@@ -19,7 +19,5 @@ there are 2 different city names: 'New York' and 'Bengalaru'. The query returns 
 
 ## Solution
 ```sql
-SELECT DISTINCT CITY 
-FROM STATION 
-WHERE MOD(ID,2) = 0;
+SELECT (COUNT(CITY)) - (COUNT(DISTINCT CITY)) FROM STATION;
 ```
