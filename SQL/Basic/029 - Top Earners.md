@@ -19,32 +19,32 @@ where employee_id is an employee's ID number, name is their name, months is the 
 the company, and salary is the their monthly salary.
 
 ##Sample Input
-| employee_id | name     | months | salary |
-|----|----------|------| 
-| 12228	 | Kristeen | 1420 |
-| 2 | Ashley   | 2006 |
-| 3	 | julia    | 2210 |
-| 4	 | Maria    | 3000 |
+| employee_id | name    | months | salary |
+|-------------|---------|--------|--------|
+|    12228    | Rose    | 15     | 1968   |
+|    33645  	| Angela  | 1      | 3443   |
+|    45692	  | Frank   | 17     | 1608   |
+|    56118    | Patrick | 7      | 1345   |
 
 ##Sample Output
-``2061``
+``69952 1``
 
 ##Explanation
-The table below shows the salaries without zeros as they were entered by Samantha:
-| ID | Name     | Salary |
-|----|----------|------| 
-| 1	 | Kristeen | 142 |
-| 2	 | Ashley   | 26 |
-| 3	 | julia    | 221 |
-| 4	 | Maria    | 3 |
+The table and earnings data is depicted in the following diagram:
+| employee_id | name    | months | salary | earnings |
+|-------------|---------|--------|--------| 29520 |
+|    12228    | Rose    | 15     | 1968   | 3443 |
+|    33645  	| Angela  | 1      | 3443   | 27336 |
+|    45692	  | Frank   | 17     | 1608   | 9415 |
+|    56118    | Patrick | 7      | 1345   | 25630 |
 
-Samantha computes an average salary of **98.00**. The actual average salary is **2159.00**.
-
-The resulting error between the two calculations is **2159.00 - 98.00 = 2061.00**. Since it is equal to the integer **2061**,
-it does not get rounded up.
+The maximum earnings value is ** 69952**. The only employee with earnings= **69952**  is Kimberly, so we print the maximum earnings value (**69952**) and a count of the number of employees who have earned **$69952** (which is **1**) as two space-separated values.
 
 ## Solution
 ```sql
-select ceil(avg(salary) - avg(replace(salary, '0', '' ) ))
-from employees;
+SELECT salary * months AS earnings, COUNT(*)
+FROM Employee
+GROUP BY earnings
+ORDER BY earnings DESC
+LIMIT 1;
 ```
