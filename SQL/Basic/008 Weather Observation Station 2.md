@@ -27,5 +27,7 @@ where ***lat*** is the sum of all values in LAT_N and ***lon*** is the sum of al
 
 ## Solution
 ```sql
-SELECT CITY, STATE FROM STATION;
+SELECT CAST(ROUND(SUM(LAT_N),2) AS NUMERIC(7,2)),
+       CAST(ROUND(SUM(LONG_W),2) AS NUMERIC(7,2))
+FROM STATION;
 ```
