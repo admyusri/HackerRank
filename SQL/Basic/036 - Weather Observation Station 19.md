@@ -1,4 +1,4 @@
-# 035 - Weather Observation Station 19
+# 036 - Weather Observation Station 19
 ## Problem
 
 Consider P1(a,c) and P2(b,d) to be two points on a 2D plane where (a,b) are the respective minimum and maximum values of Northern Latitude (LAT_N) and (c,d) are the respective minimum and maximum values of Western Longitude
