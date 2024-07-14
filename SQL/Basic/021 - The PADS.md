@@ -48,14 +48,20 @@ There are a total of 2 singers.
 There are a total of 3 actors.
 There are a total of 3 professors.
 ```
-##EXPLANATION
+## EXPLANATION
 The results of the first query are formatted to the problem description's specifications.
 The results of the second query are ascendingly ordered first by number of names corresponding to each profession 
 **(2 < 2 < 3 < 3)**, and then alphabetically by profession **(doctor < singer, and actor < professor)**.
 
 ## Solution
 ```sql
-SELECT CONCAT (NAME, '(', (LEFT(OCCUPATION,1)), ')' )
-FROM OCCUPATIONS
-ORDER BY NAME;
+select concat(name, '(', substring(occupation, 1, 1), ')') as name
+from occupations
+order by name;
+
+select concat('There are a total of', ' ', count(occupation), ' ', 
+lower(occupation), 's.') as profession
+from occupations
+group by occupation
+order by profession;
 ```
