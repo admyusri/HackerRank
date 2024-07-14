@@ -16,6 +16,7 @@ The **TRIANGLES** table is described as follows:
 | A	     | Integer |
 | B	     | Integer |
 | C      | Integer |
+
 *Each row in the table denotes the lengths of each of a triangle's three sides.*
 
 ## SAMPLE INPUT
