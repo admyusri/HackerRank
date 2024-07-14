@@ -24,5 +24,6 @@ where **LAT_N** is the northern latitude and **LONG_W** is the western longitude
 
 ## Solution
 ```sql
-
+select round( abs(min(lat_n) - max(lat_n)) + abs(min(long_w) - max(long_w)), 4)
+from station;
 ```
