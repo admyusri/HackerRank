@@ -78,5 +78,13 @@ So, the following students got 8, 9 or 10 grades:
 
 ## Solution
 ```sql
-
+SELECT      
+CASE WHEN g.grade >= 8 THEN s.name     
+ELSE null     
+END name,     
+g.grade,     
+s.marks 
+FROM students s 
+JOIN grades g ON s.marks BETWEEN g.min_mark AND g.max_mark 
+ORDER BY g.grade DESC, name, s.marks
 ```
