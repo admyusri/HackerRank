@@ -14,18 +14,21 @@ Given the table schemas below, write a query to print the company_code, founder 
 ## INPUT FORMAT
 The following tables contain company data:
 - Company: The company_code is the code of the company and founder is the founder of the company.
+  
 | Column | Type    |
 |--------|---------|
 | company_code | string |
 | founder	     | string |
 
 - Lead_Manager: The lead_manager_code is the code of the lead manager, and the company_code is the code of the working company.
+  
 | Column | Type    |
 |--------|---------|
 | lead_manager_code | string |
 | company_code    | string |
 
 - Senior_Manager: The senior_manager_code is the code of the senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company.
+  
 | Column | Type    |
 |--------|---------|
 | senior_manager_code | string |
@@ -33,6 +36,7 @@ The following tables contain company data:
 | company_code    | string |
 
 - Manager: The manager_code is the code of the manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company.
+  
 | Column | Type    |
 |--------|---------|
 | manager_code | string |
@@ -41,6 +45,7 @@ The following tables contain company data:
 | company_code    | string |
 
 - Employee: The employee_code is the code of the employee, the manager_code is the code of its manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company.
+  
 | Column | Type    |
 |--------|---------|
 | employee_code | string |
