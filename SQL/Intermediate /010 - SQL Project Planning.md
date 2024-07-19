@@ -15,7 +15,6 @@ If there is more than one project that have the same number of completion days, 
 
 ## Sample Input 
 
-Hackers Table:
 |Task_ID| Start_Date |End_Date|
 |--------|--------|--------|
 |1|2015-10-01|2015-10-02
