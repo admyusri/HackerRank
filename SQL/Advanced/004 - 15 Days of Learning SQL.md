@@ -11,12 +11,14 @@ each day. If more than one such hacker has a maximum number of submissions, prin
 The following tables hold contest data:
 
 - Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.
+  
 |Column|Type|
 |---|---|
 |hacker_id|Integer|
 |name|String|
 
 - Submissions: The submission_date is the date of the submission, submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, and score is the score of the submission.
+  
 |Column|Type|
 |---|---|
 |submission_date|Date|
