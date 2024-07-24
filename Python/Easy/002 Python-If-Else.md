@@ -1,5 +1,5 @@
 # 002 - Python If-Else
-## Problem
+## Task
 
 Given an integer, `n`, perform the following conditional actions:
 
