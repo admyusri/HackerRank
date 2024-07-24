@@ -17,21 +17,40 @@ A single line containing a positive integer, `n`.
 #### Output Format
 Print `Weird` if the number is weird; otherwise, print `Not Weird`.
 
+#### Sample Input 0
 ```
-Sample Inputs
 3
-24
 ```
 
+#### Sample Output 0
 ```
-Sample Output
 Weird
+```
+#### Explanation 0
+*n=3*
+*n* is odd and odd numbers are weird, so print Weird.
+
+#### Sample Input 1
+```
+24
+```
+#### Sample Output 1
+```
 Not Weird
 ```
+#### Explanation 1
+*n=24*
+*n* > 20 and *n* is even, so it is not weird.
 
 #### Given Code
 
 ```python
+import math
+import os
+import random
+import re
+import sys
+
 if __name__ == '__main__':
     n = int(input().strip())
 ```
