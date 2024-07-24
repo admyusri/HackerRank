@@ -15,7 +15,7 @@ A single line containing a positive integer, `n`.
 1 <= n <= 100
 
 #### Output Format
-Print `Weird` if the number is weird; otherwise, print `Not Weird`.
+Print `Weird` if the number is weird; otherwise, print `Not Weird`.
 
 ```
 Sample Inputs
