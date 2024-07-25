@@ -58,20 +58,19 @@ if __name__ == '__main__':
 ## Solution 1
 
 ```python
-def weirdo(num):
+def weirdo (num):
     if num % 2 != 0:
         return "Weird"
-    else:
+    else: 
         if 2 <= num <= 5:
             return "Not Weird"
         elif 6 <= num <= 20:
             return "Weird"
-        elif num > 20:
+        else:
             return "Not Weird"
-
-
-if __name__ == '__main__':
-    n = int(input().strip())            
+        
+N = int(input().strip())       
+print(weirdo(N))        
 ```
 
 
@@ -93,6 +92,6 @@ def even(num):
     elif num > 20:
         return "Not Weird"
 
-N = int(input())
+N = int(input().strip()) 
 print(odd(N))
 ```
