@@ -10,6 +10,7 @@ The provided code stub reads two integers from STDIN, a and b. Add code to print
 #### Example
 *a=3*
 *b=5*
+
 Print the following
 ```
 8
