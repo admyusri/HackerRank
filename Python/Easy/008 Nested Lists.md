@@ -4,6 +4,15 @@ Given the names and grades for each student in a Physics class of `N` students, 
 
 **Note**: If there are multiple students with the same grade, order their names alphabetically and print each name on a new line.
 
+#### Example
+`records = [["chi", 20.0], ["beta", 50.0], ["alpha", 50.0]]`
+The ordered list of scores is `[20.0, 50.0]`, so the second lowest score is `50.0`. There are two students with that score: ["beta", "alpha"]. Ordered alphabetically, the names are printed as:
+
+```
+alpha
+beta
+```
+
 #### Input Format
 
 The first line contains an integer, `N`, the number of students.
