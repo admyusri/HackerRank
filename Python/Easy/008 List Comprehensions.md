@@ -1,31 +1,51 @@
 # 008 - List Comprehensions
 ## Problem
-You are given three integers `X`, `Y` and `Z` representing the dimensions of a cuboid along with an integer `N`. You have to print a list of all possible coordinates given by `(i,j,k)` on a 3D grid where the sum of `i + j + k` is not equal to `N`. Here, `0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z`
+Let's learn about list comprehensions! You are given three integers `X`, `Y` and `Z` representing the dimensions of a cuboid along with an integer `N`. You have to print a list of all possible coordinates given by `(i,j,k)` on a 3D grid where the sum of `i + j + k` is not equal to `N`. Here, `0 <= i <= X; 0 <= j <= Y; 0 <= k <= Z`. Please use list comprehensions rather than multiple loops, as a learning exercise.
 
+### Example
+x=1
+y=1
+z=2
+n=3
+
+All permutations of `(i,j,k)` are:
+[[0,0,0], [0,0,1], [0,0,2], [0,1,0], [0,1,1], [0,1,2], [1,0,0], [1,0,1], [1,0,2], [1,1,0], [1,1,1], [1,1,2]].
+
+Print an array of the elements that do not sum to n=3.
+[[0,0,0], [0,0,1], [0,0,2], [0,1,0], [0,1,1], [1,0,0], [1,0,1], [1,1,0], [1,1,2]].
 
 #### Input Format
-
-Four integers `X`, `Y`, `X` and `Y` each on four separate lines, respectively.
+Four integers `x`, `y`, `z` and `n` each on four separate lines, respectively.
 
 
 #### Constraints
 Print the list in lexicographic increasing order.
 
-#### Output Format
-
-Output the answer as explained in the task.
-
+#### Sample Input : 0
 ```
-Sample Input :
 1
 1
 1
 2
 ```
 
+#### Sample Output : 0
 ```
-Sample Output :
 [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+```
+Remove all arrays that sum to n=2 to leave only the valid permutations.
+
+#### Sample Input : 1
+```
+2
+2
+2
+2
+```
+
+#### Sample Output : 1
+```
+[[0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 2], [0, 2, 1], [0, 2, 2], [1, 0, 0], [1, 0, 2], [1, 1, 1], [1, 1, 2], [1, 1, 1], [1, 2, 0], [1, 2, 1], [1, 2, 2], [2, 0, 1], [2, 0, 2], [2, 1, 0], [2, 1, 1], [2, 1, 2], [2, 2, 0], [2, 2, 1], [2, 2, 2]]
 ```
 
 #### Explanation
